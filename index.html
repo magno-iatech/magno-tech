@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,191 +11,195 @@
       --bg-color: #0e0e0e;
       --text-color: #ffffff;
       --card-bg: #1a1a1a;
-    }
+    }body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #111;
-      padding: 15px 30px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
 
-    .logo {
-      font-weight: bold;
-      font-size: 1.5em;
-      color: var(--primary-color);
-    }
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
-    nav {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
 
-    nav a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
+.btn-contato {
+  background-color: var(--primary-color);
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-    .btn-contato {
-      background-color: var(--primary-color);
-      color: #000;
-      border: none;
-      padding: 8px 15px;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+.container {
+  display: flex;
+  min-height: 100vh;
+}
 
-    .container {
-      display: flex;
-      min-height: 100vh;
-    }
+.sidebar {
+  width: 250px;
+  background-color: #121212;
+  padding: 30px 20px;
+}
 
-    .sidebar {
-      width: 250px;
-      background-color: #121212;
-      padding: 30px 20px;
-    }
+.sidebar h3 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
 
-    .sidebar h3 {
-      font-size: 1.1em;
-      margin-bottom: 20px;
-      color: var(--primary-color);
-    }
+.service {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
 
-    .service {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 25px;
-    }
+.service-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--primary-color);
+}
 
-    .service-icon {
-      font-size: 20px;
-      margin-right: 10px;
-      color: var(--primary-color);
-    }
+.service-text h4 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+}
 
-    .service-text h4 {
-      margin: 0;
-      font-size: 1em;
-      font-weight: 600;
-    }
+.service-text p {
+  margin: 5px 0 0;
+  font-size: 0.85em;
+  color: #ccc;
+}
 
-    .service-text p {
-      margin: 5px 0 0;
-      font-size: 0.85em;
-      color: #ccc;
-    }
+.main {
+  flex: 1;
+  padding: 30px;
+}
 
-    .main {
-      flex: 1;
-      padding: 30px;
-    }
+.main h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: 800;
+  width: 100%;
+}
 
-    .main h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
+.main-sub {
+  color: #ccc;
+  margin-bottom: 30px;
+}
 
-    .main-sub {
-      color: #ccc;
-      margin-bottom: 30px;
-    }
+.cards-section h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
-    .cards-section h2 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+.card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+}
 
-    .card {
-      background-color: var(--card-bg);
-      border-radius: 10px;
-      overflow: hidden;
-      width: 250px;
-    }
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
 
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
+.card-content {
+  padding: 15px;
+}
 
-    .card-content {
-      padding: 15px;
-    }
+.card-content h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
 
-    .card-content h3 {
-      margin: 0;
-      font-size: 1.1em;
-    }
+.card-content p {
+  margin: 5px 0;
+  font-weight: bold;
+}
 
-    .card-content p {
-      margin: 5px 0;
-      font-weight: bold;
-    }
+.card-content button {
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-    .card-content button {
-      margin-top: 10px;
-      background-color: var(--primary-color);
-      color: #000;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      width: 100%;
-      font-weight: bold;
-      cursor: pointer;
-    }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
-      .sidebar {
-        width: 100%;
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
+  .service {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
 
-      .service {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-right: 20px;
-      }
+  .main {
+    padding: 20px;
+  }
 
-      .main {
-        padding: 20px;
-      }
+  .main h1 {
+    font-size: 2em;
+    text-align: center;
+  }
 
-      .cards {
-        justify-content: center;
-      }
-    }
+  .cards {
+    justify-content: center;
+  }
+}
+
   </style>
 </head>
-<body>
-
-  <header>
+<body>  <header>
     <div class="logo">MAGNO TECH</div>
     <nav>
       <a href="#">Início</a>
@@ -205,90 +208,87 @@
       <a href="#">Contato</a>
       <button class="btn-contato">Fale Conosco</button>
     </nav>
-  </header>
+  </header>  <div class="container"><!-- Menu lateral -->
+<aside class="sidebar">
+  <div class="service">
+    <div class="service-icon">💻</div>
+    <div class="service-text">
+      <h4>Criação de Sites Responsivos</h4>
+      <p>Landing page, portfólios, perfis empresariais.</p>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service-icon">🤖</div>
+    <div class="service-text">
+      <h4>Desenvolvimento de Chatbots</h4>
+      <p>WhatsApp, Telegram, web, etc.</p>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service-icon">🔌</div>
+    <div class="service-text">
+      <h4>APIs e Integrações</h4>
+      <p>Google, OpenAI, Stripe e outros.</p>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service-icon">🧠</div>
+    <div class="service-text">
+      <h4>Inteligência Artificial Aplicada</h4>
+      <p>Geração de imagens, textos e mais.</p>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service-icon">💡</div>
+    <div class="service-text">
+      <h4>Programação com IA</h4>
+      <p>Automação visual e refinamento técnico.</p>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service-icon">📱</div>
+    <div class="service-text">
+      <h4>Automações Termux/Android</h4>
+      <p>Controle remoto e automações.</p>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service-icon">🎨</div>
+    <div class="service-text">
+      <h4>Design de Logomarcas</h4>
+      <p>Criação de identidade visual com IA.</p>
+    </div>
+  </div>
+</aside>
 
-  <div class="container">
+<!-- Conteúdo principal -->
+<main class="main">
+  <h1>Soluções digitais inteligentes com IA e um toque criativo humano.</h1>
+  <p class="main-sub">Criação de Sites • IA & Automações • Suporte Técnico</p>
 
-    <!-- Menu lateral -->
-    <aside class="sidebar">
-      <div class="service">
-        <div class="service-icon">💻</div>
-        <div class="service-text">
-          <h4>Criação de Sites Responsivos</h4>
-          <p>Landing page, portfólios, perfis empresariais.</p>
+  <section class="cards-section">
+    <h2>Modelos Disponíveis</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?barbershop" alt="Site Barbeiro">
+        <div class="card-content">
+          <h3>Site: Barbeiro</h3>
+          <p>R$ 500</p>
+          <button>Visualizar</button>
         </div>
       </div>
-      <div class="service">
-        <div class="service-icon">🤖</div>
-        <div class="service-text">
-          <h4>Desenvolvimento de Chatbots</h4>
-          <p>WhatsApp, Telegram, web, etc.</p>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?businesswoman" alt="Site Coach">
+        <div class="card-content">
+          <h3>Site: Coach</h3>
+          <p>R$ 600</p>
+          <button>Visualizar</button>
         </div>
       </div>
-      <div class="service">
-        <div class="service-icon">🔌</div>
-        <div class="service-text">
-          <h4>APIs e Integrações</h4>
-          <p>Google, OpenAI, Stripe e outros.</p>
-        </div>
-      </div>
-      <div class="service">
-        <div class="service-icon">🧠</div>
-        <div class="service-text">
-          <h4>Inteligência Artificial Aplicada</h4>
-          <p>Geração de imagens, textos e mais.</p>
-        </div>
-      </div>
-      <div class="service">
-        <div class="service-icon">💡</div>
-        <div class="service-text">
-          <h4>Programação com IA</h4>
-          <p>Automação visual e refinamento técnico.</p>
-        </div>
-      </div>
-      <div class="service">
-        <div class="service-icon">📱</div>
-        <div class="service-text">
-          <h4>Automações Termux/Android</h4>
-          <p>Controle remoto e automações.</p>
-        </div>
-      </div>
-      <div class="service">
-        <div class="service-icon">🎨</div>
-        <div class="service-text">
-          <h4>Design de Logomarcas</h4>
-          <p>Criação de identidade visual com IA.</p>
-        </div>
-      </div>
-    </aside>
+    </div>
+  </section>
+</main>
 
-    <!-- Conteúdo principal -->
-    <main class="main">
-      <h1>Soluções digitais inteligentes com IA e um toque criativo humano.</h1>
-      <p class="main-sub">Criação de Sites • IA & Automações • Suporte Técnico</p>
-
-      <section class="cards-section">
-        <h2>Modelos Disponíveis</h2>
-        <div class="cards">
-          <div class="card">
-            <img src="https://source.unsplash.com/400x300/?barbershop" alt="Site Barbeiro">
-            <div class="card-content">
-              <h3>Site: Barbeiro</h3>
-              <p>R$ 500</p>
-              <button>Visualizar</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://source.unsplash.com/400x300/?businesswoman" alt="Site Coach">
-            <div class="card-content">
-              <h3>Site: Coach</h3>
-              <p>R$ 600</p>
-              <button>Visualizar</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
   </div>
 </body>
 </html>
