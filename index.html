@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Magno Tech</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -21,24 +20,20 @@
     }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       background-color: #111;
-      padding: 15px 30px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 20px 30px;
     }
 
     .logo img {
-      height: 45px;
+      height: 60px;
     }
 
     nav {
       display: flex;
       gap: 20px;
       align-items: center;
+      justify-content: flex-end;
+      margin-top: -60px;
     }
 
     nav a {
@@ -55,6 +50,24 @@
       border-radius: 5px;
       font-weight: bold;
       cursor: pointer;
+    }
+
+    .header-title {
+      margin-top: 40px;
+      padding: 20px 0;
+    }
+
+    .header-title h1 {
+      font-size: 2.4em;
+      font-weight: 800;
+      margin: 0;
+      text-align: left;
+    }
+
+    .header-title .main-sub {
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #ccc;
     }
 
     .container {
@@ -193,6 +206,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <div class="logo">
       <img src="https://raw.githubusercontent.com/magno-iatech/magno-tech/main/logo.jpg" alt="Logo Magno-Tech">
@@ -204,6 +218,10 @@
       <a href="#">Contato</a>
       <button class="btn-contato">Fale Conosco</button>
     </nav>
+    <div class="header-title">
+      <h1>Soluções digitais inteligentes com IA<br>e um toque criativo humano.</h1>
+      <p class="main-sub">Criação de Sites • IA e Automações • Suporte Técnico</p>
+    </div>
   </header>
 
   <div class="container">
@@ -246,5 +264,6 @@
       </section>
     </main>
   </div>
+
 </body>
 </html>
