@@ -13,7 +13,6 @@
       --text-color: #ffffff;
       --card-bg: #1a1a1a;
     }
-
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -22,24 +21,20 @@
     }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       background-color: #111;
-      padding: 15px 30px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 20px 30px;
     }
 
     .logo img {
-      height: 45px;
+      height: 60px;
     }
 
     nav {
       display: flex;
       gap: 20px;
       align-items: center;
+      justify-content: flex-end;
+      margin-top: -60px;
     }
 
     nav a {
@@ -58,24 +53,26 @@
       cursor: pointer;
     }
 
-    .main-title {
-      font-size: 2.6em;
-      font-weight: 800;
-      text-align: center;
-      padding: 30px 20px 10px;
-      width: 100vw;
-      box-sizing: border-box;
+    .header-title {
+      margin-top: 40px;
+      padding: 20px 0;
     }
 
-    .main-sub {
-      text-align: center;
+    .header-title h1 {
+      font-size: 2.4em;
+      font-weight: 800;
+      margin: 0;
+      text-align: left;
+    }
+
+    .header-title .main-sub {
+      margin-top: 8px;
+      font-size: 0.9em;
       color: #ccc;
-      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <div class="logo">
       <img src="https://raw.githubusercontent.com/magno-iatech/magno-tech/main/logo.jpg" alt="Logo Magno-Tech">
@@ -84,11 +81,11 @@
       <a href="#">Início</a>
       <a href="#">Serviços</a>
       <a href="#">Portfólio</a>
+      <a href="#">Contato</a>
       <button class="btn-contato">Fale Conosco</button>
     </nav>
+    <div class="header-title">
+      <h1>Soluções digitais inteligentes com IA<br>e um toque criativo humano.</h1>
+      <p class="main-sub">Criação de Sites • IA e Automações • Suporte Técnico</p>
+    </div>
   </header>
-
-  <h1 class="main-title">
-    Soluções digitais inteligentes com IA<br>e um toque criativo humano.
-  </h1>
-  <p class="main-sub">Criação de Sites • IA e Automações • Suporte Técnico</p>
