@@ -1,128 +1,174 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magno Tech</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary-color: #00bfff;
-      --bg-color: #0e0e0e;
-      --text-color: #ffffff;
-      --card-bg: #1a1a1a;
-    }
-    body {
+    * {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }body {
+  background-color: #0e0e0e;
+  color: #fff;
+}
 
-    header {
-      background-color: #111;
-      padding: 20px 30px;
-    }
+header {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
 
-    .logo img {
-      height: 100px;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
-    nav {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: -60px;
-    }
+.logo img {
+  width: 50px;
+}
 
-    nav a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
+.title h1 {
+  font-size: 1.6rem;
+}
 
-    .btn-contato {
-      background-color: var(--primary-color);
-      color: #000;
-      border: none;
-      padding: 8px 15px;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+nav a {
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
 
-    .header-title {
-      margin-top: 10px;
-      padding: 10px 0  0;
-    }
+.container {
+  display: flex;
+}
 
-    .header-title h1 {
-      font-size: 2.8em;
-      font-weight: 800;
-      margin: 0;
-      text-align: left;
-    }
+.sidebar {
+  background: #1a1a1a;
+  width: 250px;
+  padding: 1rem;
+}
 
-    .header-title .main-sub {
-      margin-top: 8px;
-      font-size: 0.9em;
-      color: #ccc;
-    }
+.sidebar h3 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.main h2 {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h4 {
+  margin: 0.8rem 0 0.3rem;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  background: #00bfff;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
   </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="https://raw.githubusercontent.com/magno-iatech/magno-tech/main/logo.jpg" alt="Logo Magno-Tech">
+      <img src="logo.png" alt="Logo Magno-Tech">
+      <div class="title">
+        <h1>Soluções digitais inteligentes com IA e um toque criativo humano.</h1>
+        <p style="font-size: 0.8rem; color: #ccc;">Criação de Sites • IA e Automações • Suporte Técnico</p>
+      </div>
     </div>
     <nav>
       <a href="#">Início</a>
       <a href="#">Serviços</a>
       <a href="#">Portfólio</a>
       <a href="#">Contato</a>
-      <button class="btn-contato">Fale Conosco</button>
     </nav>
-    <div class="header-title">
-      <h1>Soluções digitais inteligentes com IA<br>e um toque criativo humano.</h1>
-      <p class="main-sub">Criação de Sites • IA e Automações • Suporte Técnico</p>
+  </header>  <div class="container">
+    <aside class="sidebar">
+      <h3>Serviços Oferecidos</h3>
+      <ul>
+        <li>Criação de Sites Responsivos</li>
+        <li>Desenvolvimento de Chatbots</li>
+        <li>APIs e Integrações</li>
+        <li>Inteligência Artificial Aplicada</li>
+        <li>Programação com IA</li>
+        <li>Automações com Termux / Android</li>
+        <li>Design de Logomarcas</li>
+      </ul>
+    </aside><main class="main">
+  <h2>Modelos Disponíveis</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="barbeiro.jpg" alt="Site Barbeiro">
+      <h4>Site: Barbeiro</h4>
+      <p>R$ 500</p>
+      <button>Visualizar</button>
     </div>
-  </header>
-<div class="container">
-  <!-- Menu lateral -->
-  <aside class="sidebar">
-    <div class="service"><div class="service-icon">💻</div><div class="service-text"><h4>Criação de Sites Responsivos</h4><p>Landing pages, portfólios, páginas empresariais.</p></div></div>
-    <div class="service"><div class="service-icon">🤖</div><div class="service-text"><h4>Desenvolvimento de Chatbots</h4><p>WhatsApp, Telegram, web, com seu banco de dados</p></div></div>
-    <div class="service"><div class="service-icon">🔌</div><div class="service-text"><h4>APIs e Integrações</h4><p>Google, OpenAI, Stripe e outros.</p></div></div>
-    <div class="service"><div class="service-icon">🧠</div><div class="service-text"><h4>Inteligência Artificial Aplicada</h4><p>Geração de imagens, textos, vídeos e muito mais</p></div></div>
-    <div class="service"><div class="service-icon">💡</div><div class="service-text"><h4>Programação com IA</h4><p>Automatizações com IA + refinamento manual</p></div></div>
-    <div class="service"><div class="service-icon">📱</div><div class="service-text"><h4>Automações com Termux / Android</h4><p>Scripts, comandos e bots direto do celular</p></div></div>
-    <div class="service"><div class="service-icon">🎨</div><div class="service-text"><h4>Design de Logomarcas</h4><p>Identidade visual com IA</p></div></div>
-  </aside>
+    <div class="card">
+      <img src="coach.jpg" alt="Site Coach">
+      <h4>Site: Coach</h4>
+      <p>R$ 600</p>
+      <button>Visualizar</button>
+    </div>
+  </div>
+</main>
 
-  <!-- Conteúdo principal -->
-  <main class="main">
-    <section class="cards-section">
-      <h2>Modelos Disponíveis</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="https://source.unsplash.com/400x300/?barbershop" alt="Site Barbeiro">
-          <div class="card-content">
-            <h3>Site: Barbeiro</h3>
-            <p>R$ 500</p>
-            <button>Visualizar</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://source.unsplash.com/400x300/?coach,person" alt="Site Coach">
-          <div class="card-content">
-            <h3>Site: Coach</h3>
-            <p>R$ 600</p>
-            <button>Visualizar</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</div>
+  </div>
+</body>
+</html>
